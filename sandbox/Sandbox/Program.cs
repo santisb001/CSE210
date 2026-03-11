@@ -20,7 +20,18 @@ class Program
         string color = Console.Readline();
         Console.WriteLine($"The color you like is {color}");
 
-        
+        if (x < y && x > z)
+        {
+            Console.WriteLine("x is the greatest");
+        }
+        else if (y < x && y > z)
+        {
+            Console.WriteLine("y is the greatest");
+        }
+        else
+        {
+            Console.WriteLine("z is the greatest");
+        }
 
 
     }
