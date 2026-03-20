@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 public class Journal
 {
@@ -10,6 +11,8 @@ public List<Entry> _entries = new List<Entry>();
 //Create display method NOT FINISHED
 public void AddEntry(Entry newEntry)
 {
+    Entry newEntry = new Entry();
+    newEntry.Display();
     _entries.Add(newEntry);
 }
 
