@@ -17,7 +17,7 @@ public void DisplayAll()
 {
     foreach (string ent in _entries)
     {
-        Console.WriteLine($"{ent}");
+        ent.Display();
     }
 }
 
