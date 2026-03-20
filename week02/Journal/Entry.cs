@@ -23,9 +23,9 @@ public Entry()
 public void Display()
 {
     
-    Console.WriteLine($"{_promptText}");
-    _entryText = Console.ReadLine();
-    Console.WriteLine($"{_date} -- {_promptText}: '{_entryText}.'");
+    //Console.WriteLine($"{_promptText}");
+    //_entryText = Console.ReadLine();
+    Console.WriteLine($"{_date} -- {_promptText}: '{_entryText}.");
 
     
 }

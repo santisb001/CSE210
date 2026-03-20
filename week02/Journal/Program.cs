@@ -7,6 +7,7 @@ class Program
         int userAction = 0;
         //Start the Journal
         Journal Journal1 = new Journal();
+        PromptGenerator GeneratorP = new PromptGenerator();
         //loop
         while (userAction != 5)
         {   
@@ -32,6 +33,18 @@ class Program
             {
                 Journal1.DisplayAll();
             }
+            else if (userAction == 3)
+            {
+                Journal1.LoadFromFile();
+            }
+            else if (userAction == 4)
+            {
+                Journal1.SaveToFile();
+            }
+            else if (userAction == 5)
+            {
+                break;
+            }            
         }
     }
 }
