@@ -9,7 +9,7 @@ public class Journal
 public List<Entry> _entries = new List<Entry>();
 
 //Create display method NOT FINISHED
-public void AddEntry(Entry newEntry)
+public void AddEntry()
 {
     Entry newEntry1 = new Entry();
     newEntry1.Display();

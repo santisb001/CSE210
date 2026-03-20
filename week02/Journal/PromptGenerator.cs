@@ -10,7 +10,7 @@ public class PromptGenerator
 //Declare the List
 public List<String> _prompts = new List<String>();
 string promptsFile = "prompts.txt";
-Random rand = new Random();
+
 public string[] lines;
 
 public PromptGenerator()
@@ -27,6 +27,7 @@ public string GetRandomPrompt()
         {
             _prompts.Add(p);
         }
+    Random rand = new Random();
     int _promptNumber = rand.Next(0,_prompts.Count);
 
     return _prompts[_promptNumber];

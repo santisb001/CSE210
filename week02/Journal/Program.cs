@@ -10,9 +10,8 @@ class Program
         //loop
         while (userAction != 5)
         {   
-            
-            Console.WriteLine("Welcome to the Journal Program!");
             Console.WriteLine();
+            Console.WriteLine("Welcome to the Journal Program!");
             Console.WriteLine("Please select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
@@ -25,10 +24,14 @@ class Program
             
             
             //Create an if to handle the menu
-
-
-            
-            Journal1.AddEntry();
+            if (userAction == 1)
+            {
+                Journal1.AddEntry();    
+            }
+            else if (userAction == 2)
+            {
+                Journal1.DisplayAll();
+            }
         }
     }
 }
