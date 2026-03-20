@@ -8,9 +8,17 @@ public class Journal
 public List<Entry> _entries = new List<Entry>();
 
 //Create display method NOT FINISHED
-public void AddEntry()
+public void AddEntry(Entry newEntry)
 {
-    //not sure
+    _entries.Add(newEntry);
+}
+
+public void DisplayAll()
+{
+    foreach (string ent in _entries)
+    {
+        Console.WriteLine($"{ent}");
+    }
 }
 
 }
