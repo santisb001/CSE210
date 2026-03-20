@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection.Emit;
 
 
 public class PromptGenerator
@@ -10,7 +11,12 @@ public class PromptGenerator
 public List<String> _prompts = new List<String>();
 string promptsFile = "prompts.txt";
 Random rand = new Random();
-string[] lines = File.ReadAllLines(promptsFile);
+public string[] lines;
+
+public PromptGenerator()
+    {
+        lines = File.ReadAllLines(promptsFile);        
+    }
 
 // It should return a STRING
 public string GetRandomPrompt()

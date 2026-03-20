@@ -6,12 +6,19 @@ public class Entry
 {
     
 //Declare the variables
-public string _date = DateTime.Now.ToShortDateString();
-
-PromptGenerator PGenerator = new PromptGenerator();
-public string _promptText = PGenerator.GetRandomPrompt();
+public string _date;
 public string _entryText = "";
+public string _promptText = "";
+public PromptGenerator PGenerator;
+//Constructor
+public Entry()
+    {
+        _date = DateTime.Now.ToShortDateString();
+        PGenerator = new PromptGenerator();
+        _promptText = PGenerator.GetRandomPrompt();
+    }
 
+//_promptText = Entry.PGenerator.GetRandomPrompt();
 //Create display method NOT FINISHED
 public void Display()
 {
