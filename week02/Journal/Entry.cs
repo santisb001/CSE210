@@ -10,6 +10,7 @@ public string _date;
 public string _entryText = "";
 public string _promptText = "";
 public PromptGenerator PGenerator;
+
 //Constructor
 public Entry()
     {
@@ -19,7 +20,7 @@ public Entry()
     }
 
 //_promptText = Entry.PGenerator.GetRandomPrompt();
-//Create display method NOT FINISHED
+//Create display method 
 public void Display()
 {
     

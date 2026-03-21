@@ -30,7 +30,7 @@ class Program
                 Journal1.AddEntry();    
             }
             else if (userAction == 2)
-            {
+            {   
                 Journal1.DisplayAll();
             }
             else if (userAction == 3)
