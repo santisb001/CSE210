@@ -12,7 +12,7 @@ public string _toSaveFile = "";
 
 public string[] _lines;
 
-public string _fileEntries = "";
+//public string _fileEntries = "";
 
 //Create display method NOT FINISHED
 public void AddEntry()
