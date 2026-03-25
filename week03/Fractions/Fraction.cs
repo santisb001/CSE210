@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 
 
-class Fraction()
+class Fraction
 {
     //Attributes
     private int _top;
@@ -17,7 +17,7 @@ class Fraction()
     }
     public Fraction(int top)
     {
-        _top = _top;
+        _top = top;
         _bottom = 1;
     }
     public Fraction(int top, int bottom)
@@ -47,14 +47,14 @@ class Fraction()
     //Methods
     public string GetFractionString()
     {
-        sdfsdsd
-        return fddfdf
+        string stringVersion = $"{_top}/{_bottom}";
+        return stringVersion;
     }
 
     public double GetDecimalValue()
     {
-        sdfsdfsdfsdf
-        return fsfsdsdf
+        double decimalValue = (double)_top / _bottom;
+        return decimalValue;
     }
 
 
