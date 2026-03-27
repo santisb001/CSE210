@@ -41,9 +41,4 @@ class Word
     {
         return _textToChange; //string
     }
-
-
-
-
-
 }
