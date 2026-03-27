@@ -16,7 +16,23 @@ class Scripture
     }
 
     //Methods
-    public
+    public void HideRandomWords(int numberToHide)
+    {
+        //
+        
+    }
+
+    public string GetDisplay()
+    {
+        //
+        return    ; //string
+    }
+
+    public bool IsCompletelyHidden()
+    {
+        //
+        return    ; //bool
+    }
 
 
 
