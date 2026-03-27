@@ -7,12 +7,14 @@ class Word
 {
     //Atributes
     private string _text;
+    private string _textToChange;
     private bool _isHidden;
 
     //Contructor
     public Word(string text)
     {
         _text = text;
+        _textToChange = text;
         _isHidden = false;
     }
 
@@ -33,7 +35,14 @@ class Word
 
     public bool IsHidden()
     {
-        _isHidden = true;
+        if (_text == new string('_', _text.Length))
+        {
+            _isHidden = true;    
+        }
+        else
+        {
+            _isHidden = false;
+        }
         return _isHidden; //bool
     }
     public string GetDisplayText()
