@@ -22,32 +22,24 @@ class Word
     public void Hide()
     {
         //Replace all the characters for '_' --- new string('_', texto.Length);
-        _text = new string('_', _text.Length);
+        _textToChange = new string('_', _text.Length);
         //The output should be "______"
-
+        _isHidden = true;
     }
 
     public void Show()
     {
-        Console.WriteLine($"{_text}");
-        
+        _textToChange = _text;
+        _isHidden = false;
     }
 
     public bool IsHidden()
     {
-        if (_text == new string('_', _text.Length))
-        {
-            _isHidden = true;    
-        }
-        else
-        {
-            _isHidden = false;
-        }
         return _isHidden; //bool
     }
     public string GetDisplayText()
     {
-        return _text; //string
+        return _textToChange; //string
     }
 
 
