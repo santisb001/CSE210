@@ -27,7 +27,6 @@ class Reference
         _endVerse = endVerse;
     }
 
-
     //Methods
     public string GetDisplayText()
     {   
