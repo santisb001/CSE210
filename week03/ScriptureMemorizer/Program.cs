@@ -5,7 +5,8 @@ using System.Security.Cryptography.X509Certificates;
 class Program
 {
     static void Main(string[] args)
-    {
+    {    
+
         Reference firstNefiReference = new Reference("1 Nefi",3,7);
         Scripture scripToStudy = new Scripture(firstNefiReference,"I will go and do the things wich the Lord hath commanded.");
         Random randNum = new Random();
@@ -14,7 +15,7 @@ class Program
 
         while (!scripToStudy.IsCompletelyHidden())
         {
-        
+        Console.Clear();
         
         string display = scripToStudy.GetDisplay();
         Console.WriteLine($"{display}");
@@ -35,7 +36,7 @@ class Program
                 Console.WriteLine($"{display}");
             }
         Console.WriteLine($"{display}");
-        Console.Clear();
+        
 
         }
 
