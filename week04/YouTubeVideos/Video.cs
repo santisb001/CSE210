@@ -22,6 +22,10 @@ class Video
     }
 
     //Methods
+    public void ExpandCommentList(Comment passedComment)
+    {
+        _comments.Add(passedComment);
+    }
     public int ReturnNumOfComments(List<Comment> commentList)
     {
         //Count and return the number of items in the Comment list.
@@ -32,7 +36,7 @@ class Video
     public void DisplayVideo()
     {
         //Display the video data and the comment data, by calling the display method of the Comment Class.
-        
+
     }
 
 
