@@ -22,20 +22,32 @@ class Video
     }
 
     //Methods
-    public void ExpandCommentList(Comment passedComment)
-    {
-        _comments.Add(passedComment);
+    public void ExpandCommentList(string nameV, string textV)
+    {   
+        Comment commentMade = new Comment(nameV,textV);
+
+        _comments.Add(commentMade);
     }
-    public int ReturnNumOfComments(List<Comment> commentList)
+    public int ReturnNumOfComments()
     {
         //Count and return the number of items in the Comment list.
-        int numberOfComments = commentList.Count();
-        return numberOfComments;//int 
+        return _comments.Count();//int 
     }
 
     public void DisplayVideo()
     {
         //Display the video data and the comment data, by calling the display method of the Comment Class.
+        Console.WriteLine("------ VIDEO ------");
+        Console.WriteLine($"Title: {_title}");
+        Console.WriteLine($"YouTube channel: {_author}");
+        Console.WriteLine($"Length: {_lengthInSeconds}s");
+        int counter = ReturnNumOfComments();
+        Console.WriteLine($"Number of comments in thuis video: {counter}");
+        Console.WriteLine($"Comments: ");
+        foreach (Comment c in _comments)
+        {
+            c.DisplayComment();
+        }
 
     }
 

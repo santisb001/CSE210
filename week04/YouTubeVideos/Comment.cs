@@ -21,19 +21,6 @@ class Comment
     public void DisplayComment()
     {
         //Display the comment data
+        Console.WriteLine($"{_name}: {_text}");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
