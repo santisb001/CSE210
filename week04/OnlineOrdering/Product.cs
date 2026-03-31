@@ -36,10 +36,15 @@ class Product
         return _prodTotalPrice;
     }
 
-    public string ReturnProduct()
+    public string ReturnProductLabel()
     {
-        return $"Product: {_prodName}, ID: {_prodID}, Price: {_prodTotalPrice}, Quantity: {_quantity}";
+        return $"Product: {_prodName}, ID: {_prodID}, Quantity: {_quantity}";
     }
+
+    //public string ReturnProduct()
+    //{
+    //    return $"Product: {_prodName}, ID: {_prodID}, Price: {_prodTotalPrice}, Quantity: {_quantity}";
+    //}
 
 
 
