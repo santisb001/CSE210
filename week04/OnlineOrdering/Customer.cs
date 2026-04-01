@@ -22,7 +22,7 @@ class Customer
     //Methods
     public string ReturnCustomer()
     {
-        return $"Customer: {_name}, Address: {_address.ReturnAddress()}";
+        return $"{_name}, Address: {_address.ReturnAddress()}";
     }
 
 
@@ -34,13 +34,4 @@ class Customer
         }
         return true;
     }
-
-
-
-
-
-
-
-
-
 }

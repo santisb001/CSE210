@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 
 
-class Adress
+class Address
 {    
     //Attributes
     private string _street;
@@ -14,7 +14,7 @@ class Adress
 
 
     //Constructor
-    public Adress(string street, string city, string stateOrProvince, string country)
+    public Address(string street, string city, string stateOrProvince, string country)
     {
         _street = street;
         _city = city;

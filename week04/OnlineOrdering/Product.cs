@@ -8,7 +8,7 @@ class Product
 {
     //Attributes
     private string _prodName;
-    private int _prodID;
+    private string _prodID;
     private float _price;
 
     private int _quantity;
@@ -16,7 +16,7 @@ class Product
 
 
     //Constructor
-    public Product(string productName, int productID, float productPrice, int productQuantity)
+    public Product(string productName, string productID, float productPrice, int productQuantity)
     {
         _prodName = productName;
         _prodID = productID;
@@ -38,24 +38,12 @@ class Product
 
     public string ReturnProductLabel()
     {
-        return $"Product: {_prodName}, ID: {_prodID}, Quantity: {_quantity}";
+        return $"{_prodName}, ID: {_prodID}, Quantity: {_quantity}";
     }
 
     //public string ReturnProduct()
     //{
     //    return $"Product: {_prodName}, ID: {_prodID}, Price: {_prodTotalPrice}, Quantity: {_quantity}";
     //}
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

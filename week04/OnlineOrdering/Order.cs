@@ -28,25 +28,26 @@ class Order
         _products.Add(productToAdd);
     }
 
-    public float CalculateOrderTotalPrice()
+    public string CalculateOrderTotalPrice()
     {
         foreach (Product P in _products)
         {
-            _totalPrice =+ P.CalculatePrice();
+            _totalPrice += P.CalculatePrice();
         } 
         if (_customer.IsUSA())
         {
-            _totalPrice =+ 5;
+            _totalPrice += 5;
         }
         else
         {
-            _totalPrice =+ 35;
+            _totalPrice += 35;
         }
-        return _totalPrice;
+        return $"Total price: ${_totalPrice}";
     }
 
     public void PackingLabel()
     {
+        Console.WriteLine("Products: ");
         foreach (Product P in _products)
         {
             Console.WriteLine($"{P.ReturnProductLabel()}");
@@ -55,6 +56,7 @@ class Order
 
     public void ShippingLabel()
     {
+        Console.WriteLine("Bring this to the following person: ");
         Console.WriteLine($"{_customer.ReturnCustomer()}");
     }
 
