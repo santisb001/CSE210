@@ -28,10 +28,6 @@ class Customer
 
     public bool IsUSA()
     {
-        if (!_address.IsInTheUSA())
-        {
-            return false;
-        }
-        return true;
+        return _address.IsInTheUSA();
     }
 }

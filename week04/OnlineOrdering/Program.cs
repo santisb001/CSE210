@@ -26,9 +26,26 @@ class Program
         //Total cost
         Console.WriteLine($"{order1.CalculateOrderTotalPrice()}");
 
-
-
-
-
+        //Customer information Forest Park Ave, St. Louis, MO 63108, EE. UU.
+        Address address2 = new Address("Forest Park Ave","St. Louis","Missouri","USA");
+        Customer customer2 = new Customer("Frederic Monroe",address2);
+        //Products for this order
+        Product product5 = new Product("Peanut butter","MK428P-a",3,25);
+        Product product6 = new Product("Butter cream","LQ321O-p",7,39);
+        Product product7 = new Product("Wooden spoon","RP112M-r",14,2);
+        Product product8 = new Product("Cookies","FN333R-u",2,32);
+        //First order
+        Order order2 = new Order(customer2);
+        //Add products
+        order2.AddProduct(product5);
+        order2.AddProduct(product6);
+        order2.AddProduct(product7);
+        order2.AddProduct(product8);
+        //Create package label
+        Console.WriteLine($"{order2.PackingLabel()}");
+        //Create shiping label
+        Console.WriteLine($"{order2.ShippingLabel()}");
+        //Total cost
+        Console.WriteLine($"{order2.CalculateOrderTotalPrice()}");
     }
 }

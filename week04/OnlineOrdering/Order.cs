@@ -8,19 +8,14 @@ class Order
 {
     //Attributes
     private List<Product> _products;
-    private float _totalPrice;
     private Customer _customer;
-    
-    
 
     //Constructor
     public Order(Customer customerName)
     {
         _customer = customerName;
         _products = new List<Product>();
-        _totalPrice = 0;
     }
-
 
     //Methods
     public void AddProduct(Product productToAdd)
@@ -30,6 +25,7 @@ class Order
 
     public string CalculateOrderTotalPrice()
     {
+        double _totalPrice = 0;
         foreach (Product P in _products)
         {
             _totalPrice += P.CalculatePrice();
@@ -47,7 +43,7 @@ class Order
 
     public void PackingLabel()
     {
-        Console.WriteLine("Products: ");
+        Console.WriteLine("Packing information: ");
         foreach (Product P in _products)
         {
             Console.WriteLine($"{P.ReturnProductLabel()}");
@@ -56,14 +52,7 @@ class Order
 
     public void ShippingLabel()
     {
-        Console.WriteLine("Bring this to the following person: ");
+        Console.WriteLine("Shipping information: ");
         Console.WriteLine($"{_customer.ReturnCustomer()}");
     }
-
-
-
-
-
-
-
 }

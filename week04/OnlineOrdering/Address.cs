@@ -41,6 +41,4 @@ class Address
             return false;
         }
     }
-
-
 }
