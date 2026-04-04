@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         //Customer information
+        Console.WriteLine("Order 1");
         Address address1 = new Address("Street 1","Laguna Paiva","Buenos Aires","Argentina");
         Customer customer1 = new Customer("Matias Larroque",address1);
         //Products for this order
@@ -20,12 +21,14 @@ class Program
         order1.AddProduct(product3);
         order1.AddProduct(product4);
         //Create package label
-        Console.WriteLine($"{order1.PackingLabel()}");
+        order1.PackingLabel();
         //Create shiping label
-        Console.WriteLine($"{order1.ShippingLabel()}");
+        order1.ShippingLabel();
         //Total cost
         Console.WriteLine($"{order1.CalculateOrderTotalPrice()}");
+        Console.WriteLine("");
 
+        Console.WriteLine("Order 2");
         //Customer information Forest Park Ave, St. Louis, MO 63108, EE. UU.
         Address address2 = new Address("Forest Park Ave","St. Louis","Missouri","USA");
         Customer customer2 = new Customer("Frederic Monroe",address2);
@@ -42,10 +45,11 @@ class Program
         order2.AddProduct(product7);
         order2.AddProduct(product8);
         //Create package label
-        Console.WriteLine($"{order2.PackingLabel()}");
+        order2.PackingLabel();
         //Create shiping label
-        Console.WriteLine($"{order2.ShippingLabel()}");
+        order2.ShippingLabel();
         //Total cost
         Console.WriteLine($"{order2.CalculateOrderTotalPrice()}");
     }
 }
+
