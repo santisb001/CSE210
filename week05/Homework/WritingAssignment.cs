@@ -16,9 +16,9 @@ class WritingAssignment : Assignment
     }
 
     //Methods
-    public string GetWitingInformation()
+    public string GetWritingInformation()
     {
-        return _title + " by " + _studenName;
+        return _title + " by " + _studentName;
     }
 
 }

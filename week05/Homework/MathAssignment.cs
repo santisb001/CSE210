@@ -15,9 +15,9 @@ class MathAssignment : Assignment
         _problems = problems;
     }
     //Methods
-    public GetHomeworkList()
+    public string GetHomeworkList()
     {
-        Console.WriteLine($"Section {_textBookSection} {_problems}");
+        return $"Section {_textBookSection} Problems {_problems}";
     }
 
 }
