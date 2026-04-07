@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-class BreathingActivity
+class BreathingActivity : Activity
 {
-    //Attributes
-
-
     //Constructor
-
+    public BreathingActivity()
+    {
+        //
+    }
 
     //Methods
+    public void Run()
+    {
+        //
+    }
 }
