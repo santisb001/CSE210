@@ -41,7 +41,8 @@ class Activity
 
     public void ShowSPinner(int seconds)
     {
-        //
+        // int miliseconds = seconds * 1000;
+        // Thread.Sleep(miliseconds);
     }
 
     public void ShowCountDown(int seconds)
