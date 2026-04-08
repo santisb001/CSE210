@@ -14,6 +14,12 @@ class BreathingActivity : Activity
     //Methods
     public void Run()
     {
-        //
+        DisplayStartingMessage();
+
+        //Breath in...
+
+        //Breath out...
+
+        DisplayEndingMessage();
     }
 }
